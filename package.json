@@ -28,6 +28,7 @@
     "matching"
   ],
   "author": "Sarath Damaraju",
+  "repository": "SarathSantoshDamaraju/cities-auto-correct",
   "license": "MIT",
   "dependencies": {
     "lodash": "^4.17.4"
