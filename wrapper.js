@@ -23,8 +23,7 @@ function getArraySimilarity(p, q, count) {
         for (var i = similarities.length - 1; i > similarities.length - (count + 1); i--) {
             required.push(similarities[i]);
         }
-        console.log(required);
-        return (required);
+        return (required.name);
     }
 }
 
