@@ -1,0 +1,35 @@
+{
+  "name": "Cities AutoCorrect",
+  "version": "1.0.0",
+  "description": "Auto Correct City names (AutoCorrects Top Indian Cities, for Now), Give a incorrect city name and get the most relevant city name ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "leven",
+    "levenshtein",
+    "algo",
+    "algorithm",
+    "string",
+    "strings",
+    "difference",
+    "diff",
+    "Cities",
+    "city",
+    "Indian cities",
+    "Indian city",
+    "India",
+    "similar",
+    "similarity",
+    "compare",
+    "comparison",
+    "match",
+    "matching"
+  ],
+  "author": "Sarath Damaraju",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
