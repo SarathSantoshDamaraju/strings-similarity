@@ -1,6 +1,6 @@
 {
   "name": "cities-auto-correct",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Auto Correct City names (AutoCorrects Top Indian Cities, for Now), Give a incorrect city name and get the most relevant city name ",
   "main": "index.js",
   "scripts": {
