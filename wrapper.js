@@ -1,8 +1,10 @@
 'use strict'
+
 const getStringsSimilarity = require('./levenshteinDistance');
 const _ = require("lodash");
 
 function wrapper(p, q, count) {
+    p = p.toLowerCase();    
     return ((Array.isArray(p) === false && Array.isArray(q) === false) ? getStringsSimilarity(p, q) : getArraySimilarity(p, q, count));
 }
 
@@ -23,7 +25,7 @@ function getArraySimilarity(p, q, count) {
         for (var i = similarities.length - 1; i > similarities.length - (count + 1); i--) {
             required.push(similarities[i]);
         }
-        return (required.name);
+        return ({"city":required[0].name});
     }
 }
 
