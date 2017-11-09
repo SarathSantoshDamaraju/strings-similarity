@@ -1,6 +1,6 @@
 {
   "name": "strings-similarity",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "Compare Strings Similarity Based on Levenshtein Distance Algorithm",
   "main": "index.js",
   "scripts": {
