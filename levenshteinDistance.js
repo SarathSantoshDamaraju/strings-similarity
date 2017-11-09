@@ -1,6 +1,6 @@
 function getStringsSimilarity(string1, string2) {
-  var longer = string1;
-  var shorter = string2;
+  var longer = string1.toLowerCase();
+  var shorter = string2.toLowerCase();   
 
   string1.length < string2.length ? (longer = string2, shorter = string1) : null;
   var maxLength = longer.length;

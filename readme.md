@@ -1,18 +1,21 @@
-Auto Correct City Names (Indian cities, for now)
+Get Similarity Between Strings
 ============
 
-Auto Correct City names (AutoCorrects Top Indian Cities, for Now), Give a incorrect city name and get the most relevant city name from the list of the cities.
+Compare two strings to get the similarity between them, ranging from 0 - Not matching to 1 - perfectly matching, It is not case sensitive. Will ignore arrays and Objects and return similarity as 0.
 
 
 
 ## Usage
-1. **Install NPM Package:** `npm i cities-auto-correct -s`
-2. Require the `Cities-AutoCorrect` in your **Node Project**
+1. **Install NPM Package:** `npm i strings-similarity -s`
+2. Require the `strings-similarity` in your **Node Project**
 ```
-var autoCorrect = require('Cities-AutoCorrect');
+var isSimilar = require('strings-similarity');
 
-console.log(autoCorrect('Chenai')); // { city: 'Chennai' }
-console.log(autoCorrect('deli')); // { city: 'Delhi' }
+console.log(isSimilar('Chenai','chennai')); // { similarity: 'Chennai' }
+console.log(isSimilar('wow', 'delhi')); // { similarity: 0 }
+console.log(isSimilar(["a"], 'delhi')); // { similarity: 0 }
+console.log(isSimilar({"sample":"sample"}, 'delhi')); // { similarity: 0 }
+console.log(isSimilar('', 'delhi')); // { error: Invalid Params }
 ```
 
 ---
