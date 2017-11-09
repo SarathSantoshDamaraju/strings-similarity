@@ -1,8 +1,13 @@
 'use strict'
-const wrapper = require('./wrapper');
-const city_names = require('./city_names');
 
-function main(city, count=1){
-    return((typeof(city) === "string")&&(typeof(count) === "number")&&(count>=0) ? wrapper(city,city_names, count) : -1 )
+const getStringsSimilarity = require('./levenshteinDistance');
+
+function main(string1 = null,string2 = null){
+    if(string1 && string2){
+    return {"similarity": ((typeof(string1) === "string") && (typeof(string2) === "string") ? getStringsSimilarity(string1, string2) : 0 )}
+    }
+    else {
+        return({"error":"Invalid Params"})
+    }
 }
 module.exports = main;
